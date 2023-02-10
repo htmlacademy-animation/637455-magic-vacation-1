@@ -49,6 +49,7 @@
   &:nth-child(2) {
     .slider__item-text {
       margin-top: 7.8rem;
+      transition-delay: .3s;
 
       @media (min-width: $stop-scaling) {
         margin-top: 78px;
@@ -96,6 +97,10 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
+  opacity: 0;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+  transform: translate(15px, 0px);
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;

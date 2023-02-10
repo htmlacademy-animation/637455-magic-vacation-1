@@ -17,6 +17,16 @@
   @media (max-width: $tablet - 1) and (orientation: landscape) {
     height: 100vh;
   }
+  &.active{
+    .intro__message,
+    .slider__item-text{
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+    .form__field{
+      width: calc(100% - 21rem);
+    }
+  }
 }
 
 .screen__wrapper {
