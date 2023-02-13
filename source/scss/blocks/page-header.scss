@@ -214,6 +214,7 @@
 
   li {
     margin-left: 4rem;
+    overflow: hidden;
 
     @media (min-width: $stop-scaling) {
       margin-left: 40px;
@@ -252,9 +253,10 @@
       height: 2px;
       background-color: $c-light;
       display: block;
-      left: 0;
+      right: 0;
       transition-duration: .3s;
-      transition-property: width;
+      transition-timing-function: ease;
+
 
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
@@ -264,7 +266,7 @@
 
       @media (max-width: $mobile) and (orientation: landscape) {
         left: 0;
-        right: 0;
+        right: auto;
         background-color: $c-dark;
       }
     }
@@ -272,6 +274,8 @@
     &:hover{
       &::after{
         width: 100%;
+        left: 0;
+        right: auto;
       }
     }
 
