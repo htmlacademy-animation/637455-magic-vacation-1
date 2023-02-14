@@ -1935,6 +1935,7 @@ body.active .page-header__nav {
 body.active .page-header__nav a.active::after {
   width: 100%;
   right: auto;
+  left: 0;
 }
 
 .page-header__wrapper {
@@ -3957,7 +3958,8 @@ body.active .social-block__toggler:before {
   background-color: #ffffff;
   border: 2px solid #ffffff;
   z-index: -1;
-  transition: 0.3s;
+  transition-duration: 0.3s;
+  transition-delay: 0.3s;
 }
 .social-block__toggler svg {
   position: absolute;
