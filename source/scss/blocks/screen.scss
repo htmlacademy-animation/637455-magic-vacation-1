@@ -17,6 +17,20 @@
   @media (max-width: $tablet - 1) and (orientation: landscape) {
     height: 100vh;
   }
+  &.active{
+    .intro__message{
+      opacity: 1;
+      transform: translate(0rem, 0rem);
+    }
+    .form__field{
+      width: calc(100% - 21rem);
+      padding: 0 5.6rem;
+      @media (orientation: portrait) {
+        width: calc(100% - 5rem);
+        padding: 0 2.5rem;
+      }
+    }
+  }
 }
 
 .screen__wrapper {
