@@ -72,7 +72,7 @@ body{
   opacity: 0;
   transform: translate(0rem, 5rem);
   transition-duration: .2s;
-  transition-timing-function: cubic-bezier(0,.91,.47,.45);
+  transition-timing-function: $custom-bezier;
 
 
   @media (max-width: $tablet) and (orientation: portrait) {
