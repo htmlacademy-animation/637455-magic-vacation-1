@@ -1973,7 +1973,7 @@ body.active .page-header__nav a.active::after {
   opacity: 0;
   transition-duration: 0.3s;
   transform: translate(-3rem, 0rem);
-  transition-timing-function: cubic-bezier(0, 0.91, 0.47, 0.45);
+  transition-timing-function: cubic-bezier(0.48, 1.01, 0.51, 0.03);
 }
 .page-header__logo:hover {
   opacity: 0.8;
@@ -2080,7 +2080,7 @@ body.active .page-header__nav a.active::after {
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.3s;
-  transition-timing-function: cubic-bezier(0, 0.91, 0.47, 0.45);
+  transition-timing-function: cubic-bezier(0.48, 1.01, 0.51, 0.03);
 }
 @media (max-width: 1024px) and (orientation: portrait) {
   .page-header__nav {
@@ -2211,6 +2211,7 @@ body.active .page-header__nav a.active::after {
   background-color: #ffffff;
   display: block;
   right: 0;
+  transition-delay: 0.3s;
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
@@ -3249,7 +3250,7 @@ body.active .screen__footer {
   opacity: 0;
   transform: translate(0rem, 5rem);
   transition-duration: 0.2s;
-  transition-timing-function: cubic-bezier(0, 0.91, 0.47, 0.45);
+  transition-timing-function: cubic-bezier(0.48, 1.01, 0.51, 0.03);
 }
 @media (max-width: 1024px) and (orientation: portrait) {
   .screen__footer {
@@ -3959,6 +3960,7 @@ body.active .social-block__toggler:before {
   border: 2px solid #ffffff;
   z-index: -1;
   transition-duration: 0.3s;
+  transition-delay: 0.3s;
 }
 .social-block__toggler svg {
   position: absolute;
