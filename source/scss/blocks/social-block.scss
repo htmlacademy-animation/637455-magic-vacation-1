@@ -48,6 +48,7 @@ body{
     z-index: -1;
     transition-duration: .3s;
     transition-delay: .3s;
+    transition-timing-function: cubic-bezier(.6,-0.25,.34,1.51);
   }
 
   svg {
@@ -58,7 +59,7 @@ body{
   }
 
   &:hover,
-  .social-block--active & {
+  body.active .social-block--active & {
     color: $c-purple;
 
     &::before {
