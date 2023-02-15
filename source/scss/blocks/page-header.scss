@@ -157,7 +157,6 @@ body{
   align-items: center;
   opacity: 0;
   transition: .5s;
-  transition-delay: .3s;
   transition-timing-function: $custom-bezier;
 
   @media (max-width: $tablet) and (orientation: portrait) {
@@ -283,7 +282,6 @@ body{
       background-color: $c-light;
       display: block;
       right: 0;
-      transition-delay: .3s;
       transition-duration: .3s;
       transition-timing-function: ease;
 
